@@ -7,11 +7,11 @@ html {
 .container {
   text-align: center;
   height: 100%;
+  width: 100%;
   padding: 16px;
   box-sizing: border-box;
   display: grid;
-  grid-template: 1fr 5fr 1fr / 1fr 3fr;
-  gap: 15px;
+  grid-template: 1fr 5fr 1fr / 1fr 5fr;
 }
 
 .container, header, nav, aside, article, footer {
@@ -19,43 +19,94 @@ html {
   font-size: 32px;
   font-family: Helvetica;
   font-weight: bold;
-  color: white;
-  border-radius: 15px;
+  color: rgb(0, 0, 0);
 }
 
 .header {
-  background-color: #006157;
-  grid-column: 1 / 3;
+  background-color: #FFFFFF;
+  grid-column: 2 / 3;
   grid-row: 1 / 2;
 }
 
 .sidebar {
-  background-color: #005B94;
+  background-color: #1992d4;
   grid-column: 1 / 2;
-  grid-row: 2 / 4;
-}
-
-.nav {
-  background-color: #642cde;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
+  grid-row: 1 / 5;
+  color: #FFFFFF;
 }
 
 .article {
-  background-color: #7E1DC3;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+    background-color: #e2e8f0;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    text-align: left;
+    font-size: 20px;
+    display: grid;
+    grid-template: 1fr / 2fr 1fr;
+    gap: 20px;
 }
 
-.footer {
-  background-color: #393f4d;
-  grid-column: 1 / 3;
-  grid-row: 4 / 5;
+.article div {
+    border-radius: 8px;
+    
+}
+
+.card-container {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
+    gap: 20px;
+}
+
+.card-container div {
+    background-color: #FFFFFF;
+}
+
+.card1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.card3 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.card4 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.card5 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+}
+
+.card6 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
 }
 
 .article p {
   font-size: 18px;
   font-family: sans-serif;
-  color: white;
-  text-align: left;
+  color: #636363;
+}
+
+.side-container {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr;
+    gap: 80px;
+}
+
+.side-container div {
+    background-color: #FFFFFF;
 }
